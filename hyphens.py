@@ -13,7 +13,7 @@ sdr.gain = 'auto'
 sdroutput = str(sdr.read_samples(512))
 savefile = open('finaldata.txt', 'w')
 sdr1 = sdroutput.translate(None, '[]').split()
-sdr2 = sdr1#.split('\n')
+sdr2 = sdr1
 finaldata = ''
 for line in sdr2:
     if not "-" in line:
